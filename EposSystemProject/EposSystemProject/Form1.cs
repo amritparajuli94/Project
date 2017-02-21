@@ -16,5 +16,17 @@ namespace EposSystemProject
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AddProduct addProduct = new AddProduct();
+            addProduct.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            ViewProducts viewProducts = new ViewProducts();
+            viewProducts.Show();
+        }
     }
 }

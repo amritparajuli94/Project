@@ -1,1 +1,13 @@
 c:\users\amrit\documents\visual studio 2015\Projects\EposSystemProject\EposSystemProject\bin\Debug\EposSystemProject.exe.config
+C:\Users\AMRIT\Documents\Visual Studio 2015\Projects\EposSystemProject\EposSystemProject\bin\Debug\EposSystemDatabase.mdf
+C:\Users\AMRIT\Documents\Visual Studio 2015\Projects\EposSystemProject\EposSystemProject\bin\Debug\EposSystemDatabase_log.ldf
+C:\Users\AMRIT\Documents\Visual Studio 2015\Projects\EposSystemProject\EposSystemProject\bin\Debug\EposSystemProject.exe
+C:\Users\AMRIT\Documents\Visual Studio 2015\Projects\EposSystemProject\EposSystemProject\bin\Debug\EposSystemProject.pdb
+C:\Users\AMRIT\Documents\Visual Studio 2015\Projects\EposSystemProject\EposSystemProject\obj\Debug\EposSystemProject.csprojResolveAssemblyReference.cache
+C:\Users\AMRIT\Documents\Visual Studio 2015\Projects\EposSystemProject\EposSystemProject\obj\Debug\EposSystemProject.AddProduct.resources
+C:\Users\AMRIT\Documents\Visual Studio 2015\Projects\EposSystemProject\EposSystemProject\obj\Debug\EposSystemProject.Form1.resources
+C:\Users\AMRIT\Documents\Visual Studio 2015\Projects\EposSystemProject\EposSystemProject\obj\Debug\EposSystemProject.Properties.Resources.resources
+C:\Users\AMRIT\Documents\Visual Studio 2015\Projects\EposSystemProject\EposSystemProject\obj\Debug\EposSystemProject.csproj.GenerateResource.Cache
+C:\Users\AMRIT\Documents\Visual Studio 2015\Projects\EposSystemProject\EposSystemProject\obj\Debug\EposSystemProject.exe
+C:\Users\AMRIT\Documents\Visual Studio 2015\Projects\EposSystemProject\EposSystemProject\obj\Debug\EposSystemProject.pdb
+C:\Users\AMRIT\Documents\Visual Studio 2015\Projects\EposSystemProject\EposSystemProject\obj\Debug\EposSystemProject.ViewProducts.resources
