@@ -64,5 +64,23 @@ namespace EposSystemProject
 
             MessageBox.Show("Product has been Successfully added.");
         }
+
+        private void AddProduct_Load(object sender, EventArgs e)
+        {
+            //clsDB db = new EposSystemProject.clsDB();
+            //DataSet ds = new DataSet();
+            //ds = db.SelectCommand("SELECT * FROM TblProductType");
+            //for (int i = 0; i < ds.Tables[0].Rows.Count; i++)
+            //{
+            //    //  ProType = Convert.ToInt16(ds.Tables[0].Rows[i]["ProductType"]);
+            //    //   Description = ds.Tables[0].Rows[i]["Description"].ToString();
+            //    cmbCategory.Items.Add(ds.Tables[0].Rows[i]["Description"].ToString());
+            //}
+        }
+
+        private void cmbCategory_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

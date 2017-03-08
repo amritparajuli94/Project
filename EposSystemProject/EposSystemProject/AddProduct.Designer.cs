@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -39,7 +40,11 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.eposSystemDatabaseDataSet1 = new EposSystemProject.EposSystemDatabaseDataSet1();
+            this.eposSystemDatabaseDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eposSystemDatabaseDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eposSystemDatabaseDataSet1BindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -91,6 +96,8 @@
             // 
             this.cmbCategory.AccessibleName = "cboCategory";
             this.cmbCategory.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.cmbCategory.DataSource = this.eposSystemDatabaseDataSet1;
+            this.cmbCategory.DisplayMember = "TblProductType.Description";
             this.cmbCategory.FormattingEnabled = true;
             this.cmbCategory.Location = new System.Drawing.Point(146, 74);
             this.cmbCategory.MaxDropDownItems = 10;
@@ -98,7 +105,8 @@
             this.cmbCategory.Name = "cmbCategory";
             this.cmbCategory.Size = new System.Drawing.Size(160, 24);
             this.cmbCategory.TabIndex = 5;
-            this.cmbCategory.Text = "Category";
+            this.cmbCategory.ValueMember = "TblProductType.Description";
+            this.cmbCategory.SelectedIndexChanged += new System.EventHandler(this.cmbCategory_SelectedIndexChanged);
             // 
             // label4
             // 
@@ -133,7 +141,7 @@
             // button2
             // 
             this.button2.AccessibleName = "btnUpload";
-            this.button2.Location = new System.Drawing.Point(191, 218);
+            this.button2.Location = new System.Drawing.Point(191, 227);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(76, 33);
             this.button2.TabIndex = 9;
@@ -144,6 +152,16 @@
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // eposSystemDatabaseDataSet1
+            // 
+            this.eposSystemDatabaseDataSet1.DataSetName = "EposSystemDatabaseDataSet1";
+            this.eposSystemDatabaseDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // eposSystemDatabaseDataSet1BindingSource
+            // 
+            this.eposSystemDatabaseDataSet1BindingSource.DataSource = this.eposSystemDatabaseDataSet1;
+            this.eposSystemDatabaseDataSet1BindingSource.Position = 0;
             // 
             // AddProduct
             // 
@@ -162,7 +180,10 @@
             this.Controls.Add(this.label1);
             this.Name = "AddProduct";
             this.Text = "Add New Product";
+            this.Load += new System.EventHandler(this.AddProduct_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eposSystemDatabaseDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eposSystemDatabaseDataSet1BindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -181,5 +202,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private EposSystemDatabaseDataSet1 eposSystemDatabaseDataSet1;
+        private System.Windows.Forms.BindingSource eposSystemDatabaseDataSet1BindingSource;
     }
 }
